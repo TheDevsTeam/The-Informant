@@ -6,11 +6,11 @@ class InfosController < ApplicationController
   end
 
   def new
-    @info = Info.new
+    @info = current_user.infos.build
   end
 
   def create
-    @info = Info.new(info_params)
+    @info = current_user.infos.build(info_params)
 
     if @info.save
       redirect_to @info, notice: "You have successfully created the new info"
