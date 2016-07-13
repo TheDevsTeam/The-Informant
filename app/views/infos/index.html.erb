@@ -1,1 +1,14 @@
-<h1>Me</h1>
+<div class="transitions-enabled" id="infos">
+  <% @infos.each do |info| %>
+    <div class="box panel panel-default">
+      <%= link_to (image_tag info.image.url), info %>
+      <h2>
+        <%= link_to info.title, info %>
+      </h2>
+      <p class="user">
+        Submitted by
+        <%= info.user.email %>
+      </p>
+    </div>
+  <% end %>
+</div>

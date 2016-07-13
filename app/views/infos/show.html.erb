@@ -1,0 +1,39 @@
+<div class="row" id="info_show">
+  <div class="col-md-8 col-md-offset-2">
+    <div class="panel panel-default">
+      <div class="panel-heading info_image">
+        <%= image_tag @info.image.url %>
+      </div>
+      <div class="panel-body">
+        <h1>
+          <%= @info.title %>
+        </h1>
+        <p class="description">
+          <%= @info.description %>
+        </p>
+      </div>
+      <div class="panel-footer">
+        <div class="row">
+          <div class="col-md-6">
+            <p class="user">
+              Submitted by
+              <%= @info.user.email %>
+            </p>
+          </div>
+          <div class="col-md-6">
+            <div class="btn-group pull-right">
+              <%= link_to like_info_path(@info), method: :put, class: "btn btn-default" do %>
+                <span class="glyphicon glyphicon-heart"></span>
+                <%= @info.get_upvotes.size %>
+              <% end %>
+              <% if user_signed_in? %>
+                <%= link_to "Edit", edit_info_path, class: "btn btn-default" %>
+                <%= link_to "Delete", info_path, method: :delete, data: { confirm: "The informant are you sure?" }, class: "btn btn-default" %>
+              <% end %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
