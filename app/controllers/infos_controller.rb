@@ -32,7 +32,7 @@ class InfosController < ApplicationController
       render 'edit'
   end
 
-  def destroy\
+  def destroy
     @info.destroy
     redirect_to root_path
   end
@@ -40,12 +40,12 @@ class InfosController < ApplicationController
   private
 # this is so info is only permitted to add title and description
   def pin_params
-    params.require(:info).permit(:title, :description)
+    params.require(:info).permit(:title, :description, :image)
   end
 
   def find_info
     @info = Info.find(params[:id])
   end
-
+end
 
 end
