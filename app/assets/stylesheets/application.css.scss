@@ -26,6 +26,11 @@
  	font-weight: 100;
  }
 
+.navbar-default {
+    background-color: #0c0c0c;
+    border-color: #e7e7e7;
+}
+
  nav {
  	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.22);
  	.navbar-brand {
@@ -39,15 +44,17 @@
  	}
  }
 
- #pins {
-   margin: 0 auto;
+ #infos {
+   margin: 20px;
    width: 100%;
    .box {
  	  margin: 10px;
- 	  width: 350px;
+ 	  width: 250px;
+    height: auto;
  	  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.22);
  	  border-radius: 7px;
  	  text-align: center;
+    float: left;
  	  img {
  	  	max-width: 100%;
  	  	height: auto;
@@ -78,11 +85,11 @@
  	}
  }
 
- #pin_show {
+ #info_show {
  	.panel-heading {
  		padding: 0;
  	}
- 	.pin_image {
+ 	.info_image {
  		img {
  			max-width: 100%;
  			width: 100%;
@@ -114,4 +121,54 @@
 
  textarea {
  	min-height: 250px;
+ }
+
+ .jumbotron{
+  background: #E9E9E9;
+  text-align: center;
+  h1 {
+    color:#BD1E23;
+    font-weight: bold;
+    font-style: italic;
+  }
+  p {
+    color:#BD1E23;
+    font-weight: bold;
+    font-style: italic;
+  }
+}
+
+section {
+  width: 29%;
+  float: left;
+  margin: 2% 2%;
+  text-align: center;
+}
+
+footer {
+  background: #0c0c0c;
+  width: 100%;
+  overflow: hidden;
+  opacity: 0.90;
+	// position: fixed;
+}
+footer p, footer h3 {
+  color: #FFF;
+}
+footer p a {
+  color: #FFF;
+  text-decoration: none;
+}
+ul.social li {
+  display: inline;
+}
+ul.social li img {
+  height: 30px;
+}
+footer.second {
+   border-top: 1px solid #404E50;
+   background-color: #333333;
+   max-width: 50px;
+   text-align: center;
+   opacity: 0.95;
  }
