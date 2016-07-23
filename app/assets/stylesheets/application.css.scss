@@ -52,6 +52,7 @@
  	  margin: 10px;
  	  width: 250px;
     height: auto;
+    overflow: hidden;
  	  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.22);
  	  border-radius: 7px;
  	  text-align: center;
@@ -118,6 +119,9 @@
  			margin: 0;
  		}
  		.user {
+ 			padding-top: 8px;
+ 		}
+ 		.small {
  			padding-top: 8px;
  		}
  	}
