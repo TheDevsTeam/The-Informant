@@ -23,6 +23,8 @@ gem 'masonry-rails', '~> 0.2.4'
 gem 'acts_as_votable', '~> 0.10.0'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
+gem "pg"
+gem 'puma'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
@@ -34,10 +36,10 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-
-group :development, :test do
-  gem "sqlite3"
-end
+#
+# group :development, :test do
+#   gem "pg"
+# end
 
 #group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -53,9 +55,8 @@ group :development do
   gem 'spring'
 
   group :production do
-    gem "pg"
+
   end
 
   gem 'rails_12factor', group: :production
-  gem 'puma'
 end
