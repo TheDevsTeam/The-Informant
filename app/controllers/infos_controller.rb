@@ -47,7 +47,7 @@ class InfosController < ApplicationController
 	private
 
 	def info_params
-		params.require(:info).permit(:title, :description, :image)
+		params.require(:info).permit(:title, :description, :image, :category, :url)
 	end
 
 	def find_info

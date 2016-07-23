@@ -15,12 +15,12 @@
 <div class="transitions-enabled" id="infos">
   <% @infos.each do |info| %>
     <div class="box panel panel-default">
-      <%= link_to (image_tag info.image.url), info %>
+      <%= link_to (image_tag info.url), info %>
       <h2>
         <%= link_to info.title, info %>
       </h2>
       <p class="small">
-        Synopsis:
+        <b class="s">SYNOPSIS</b>:
         <%= info.description %>
       </p>
       <p class="user">
