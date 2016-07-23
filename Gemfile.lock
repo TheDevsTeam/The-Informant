@@ -47,7 +47,6 @@ GEM
       autoprefixer-rails (>= 5.2.1)
       sass (>= 3.3.4)
     builder (3.2.2)
-    byebug (9.0.5)
     climate_control (0.0.3)
       activesupport (>= 3.0)
     cocaine (0.5.8)
@@ -103,6 +102,7 @@ GEM
       cocaine (~> 0.5.5)
       mime-types
       mimemagic (~> 0.3.0)
+    pg (0.18.3)
     pkg-config (1.1.7)
     rack (1.6.4)
     rack-test (0.6.3)
@@ -182,13 +182,13 @@ PLATFORMS
 DEPENDENCIES
   acts_as_votable (~> 0.10.0)
   bootstrap-sass (~> 3.3, >= 3.3.6)
-  byebug
   coffee-rails (~> 4.1.0)
   devise (~> 4.2)
   jbuilder (~> 2.0)
   jquery-rails
   masonry-rails (~> 0.2.4)
   paperclip (~> 5.0)
+  pg
   rails (= 4.2.5.1)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
